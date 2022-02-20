@@ -128,7 +128,9 @@ main {
     flex-direction: column;
     justify-content: center; }
   .home__text, .about__title {
-    text-align: center; } }
+    text-align: center; }
+  .blog__title, .blog__intro {
+    padding: 0 2rem 1rem 2rem; } }
 
 @media screen and (min-width: 821px) {
   .home {
@@ -420,17 +422,21 @@ main {
   text-transform: lowercase;
   padding: 0.5em 0; }
 
+.work__hyperlink {
+  color: #000;
+  text-decoration: none; }
+
 .work__link {
   color: #000;
   font-style: italic;
   margin: 3em 0;
   font-size: 1.5rem; }
 
-.work__link:hover {
+.work__link:hover, .work__hyperlink:hover {
   color: #fff;
   background-color: #000; }
 
-.work__link:active {
+.work__link:active, .work__hyperlink:active {
   color: #000;
   background-color: #000; }
 
@@ -564,19 +570,27 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5em 0; }
+    margin: 5rem 0;
+    padding: 0 18rem; }
   .blog__title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    font-weight: 400;
-    margin: 0 3em; }
+    font-weight: 400; }
+  .blog__link {
+    color: #000;
+    text-decoration: none; }
+  .blog__link:hover {
+    color: #fff;
+    background-color: #000; }
+  .blog__link:active {
+    color: #000;
+    background-color: #000; }
   .blog__intro {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin: 3em;
-    padding: 0 2em;
-    max-width: 850px; }
+    max-width: 850px;
+    margin-bottom: 1rem; }
 
 .article {
   margin-bottom: 5rem; }
@@ -589,12 +603,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
-  .article__text, .article__list {
+  .article__text, .article__list, .article__heading, .article__elements {
     max-width: 850px;
     padding: 0px 1em;
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
     font-weight: 300; }
+  .article__heading {
+    font-style: italic;
+    font-weight: 500; }
+  .article__strong, .article__italic {
+    padding: 0;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 0.5rem; }
   .article__image {
     display: flex;
     justify-content: center;
@@ -617,3 +639,20 @@ main {
     margin: 3rem 0; }
   .article__sources {
     list-style-type: none; }
+  .article__elements {
+    list-style-type: none; }
+  .article__element {
+    font-weight: 300; }
+  .article__link {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2rem; }
+  .article__link:hover {
+    text-decoration: none; }
+  .article__link:active {
+    text-decoration: none;
+    color: grey; }
