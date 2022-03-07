@@ -423,8 +423,7 @@ main {
   padding: 0.5em 0; }
 
 .work__hyperlink {
-  color: #000;
-  text-decoration: none; }
+  color: #000; }
 
 .work__link {
   color: #000;
@@ -577,8 +576,7 @@ main {
     font-size: 3rem;
     font-weight: 400; }
   .blog__link {
-    color: #000;
-    text-decoration: none; }
+    color: #000; }
   .blog__link:hover {
     color: #fff;
     background-color: #000; }
