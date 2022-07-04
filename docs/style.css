@@ -618,7 +618,8 @@ main {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 400;
-    margin: 2em 3em 1em 3em; }
+    margin: 1em 0.2em;
+    color: #A00606; }
   .article__wrap {
     display: flex;
     flex-direction: column;
